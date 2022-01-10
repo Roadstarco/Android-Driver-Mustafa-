@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".app.module.ui.auth.SigninActivity">
+
+    <include layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?actionBarSize"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/dimen_250"
+                android:layout_height="@dimen/dimen_250"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/img_reg_comp" />
+
+            <TextView
+                style="@style/text_meduim_label"
+                android:gravity="start"
+                android:paddingHorizontal="@dimen/dimen_50"
+                android:paddingTop="@dimen/dimen_16"
+                android:text="@string/please_enter_the_company_details"
+                android:textStyle="bold" />
+            <!--    Company Name-->
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/text_input_lay"
+                android:layout_marginStart="@dimen/dimen_50"
+                android:layout_marginEnd="@dimen/dimen_50"
+                android:hint="@string/company_name"
+                app:boxBackgroundColor="@android:color/transparent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etCompanyName"
+                    style="@style/edit_text_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <!--Company Reg Number-->
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/text_input_lay"
+                android:layout_marginStart="@dimen/dimen_50"
+                android:layout_marginEnd="@dimen/dimen_50"
+                android:hint="@string/company_registration_number"
+
+                app:boxBackgroundColor="@android:color/transparent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etCompanyRegistration"
+                    style="@style/edit_text_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!--Total Vehicles-->
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/text_input_lay"
+                android:layout_marginStart="@dimen/dimen_50"
+                android:layout_marginEnd="@dimen/dimen_50"
+                android:hint="@string/total_number_of_vehicles"
+
+                app:boxBackgroundColor="@android:color/transparent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etNumberOfVehicle"
+                    style="@style/edit_text_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:digits="123456789"
+                    android:inputType="phone" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_marginTop="@dimen/dimen_10"
+                android:id="@+id/rvDocumentRecycler"
+                android:layout_width="match_parent"
+                tools:itemCount="2"
+                tools:listitem="@layout/item_documents"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:id="@+id/lay_signin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:padding="@dimen/dimen_20">
+
+                <TextView
+                    style="@style/text_meduim_label"
+                    android:text="Already have an Account ? "
+                    android:textSize="@dimen/text_small" />
+
+                <TextView
+                    style="@style/text_meduim_label"
+                    android:paddingStart="@dimen/dimen_5"
+                    android:text="@string/sign_in"
+                    android:textColor="@color/color_orange"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_next"
+                style="@style/ButtonPrimary"
+                android:layout_marginTop="@dimen/dimen_16"
+                android:stateListAnimator="@null"
+                android:text="@string/next" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:progressTint="@color/red"
+        android:theme="@style/progressBarRed"
+        android:visibility="gone" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

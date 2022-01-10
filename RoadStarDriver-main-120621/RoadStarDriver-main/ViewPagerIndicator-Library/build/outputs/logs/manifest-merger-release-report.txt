@@ -1,0 +1,37 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/wirelesslife/StudioProjects/Help Projects/Muneeb Project/Your Source/Your Source/ViewPagerIndicator-Library/AndroidManifest.xml:3:1-8:12
+INJECTED from /Users/wirelesslife/StudioProjects/Help Projects/Muneeb Project/Your Source/Your Source/ViewPagerIndicator-Library/AndroidManifest.xml:3:1-8:12
+INJECTED from /Users/wirelesslife/StudioProjects/Help Projects/Muneeb Project/Your Source/Your Source/ViewPagerIndicator-Library/AndroidManifest.xml:3:1-8:12
+INJECTED from /Users/wirelesslife/StudioProjects/Help Projects/Muneeb Project/Your Source/Your Source/ViewPagerIndicator-Library/AndroidManifest.xml:3:1-8:12
+INJECTED from /Users/wirelesslife/StudioProjects/Help Projects/Muneeb Project/Your Source/Your Source/ViewPagerIndicator-Library/AndroidManifest.xml:3:1-8:12
+INJECTED from /Users/wirelesslife/StudioProjects/Help Projects/Muneeb Project/Your Source/Your Source/ViewPagerIndicator-Library/AndroidManifest.xml:3:1-8:12
+INJECTED from /Users/wirelesslife/StudioProjects/Help Projects/Muneeb Project/Your Source/Your Source/ViewPagerIndicator-Library/AndroidManifest.xml:3:1-8:12
+	package
+		ADDED from /Users/wirelesslife/StudioProjects/Help Projects/Muneeb Project/Your Source/Your Source/ViewPagerIndicator-Library/AndroidManifest.xml:4:5-37
+		INJECTED from /Users/wirelesslife/StudioProjects/Help Projects/Muneeb Project/Your Source/Your Source/ViewPagerIndicator-Library/AndroidManifest.xml
+		INJECTED from /Users/wirelesslife/StudioProjects/Help Projects/Muneeb Project/Your Source/Your Source/ViewPagerIndicator-Library/AndroidManifest.xml
+	android:versionName
+		ADDED from /Users/wirelesslife/StudioProjects/Help Projects/Muneeb Project/Your Source/Your Source/ViewPagerIndicator-Library/AndroidManifest.xml:6:5-32
+		INJECTED from /Users/wirelesslife/StudioProjects/Help Projects/Muneeb Project/Your Source/Your Source/ViewPagerIndicator-Library/AndroidManifest.xml
+		INJECTED from /Users/wirelesslife/StudioProjects/Help Projects/Muneeb Project/Your Source/Your Source/ViewPagerIndicator-Library/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/wirelesslife/StudioProjects/Help Projects/Muneeb Project/Your Source/Your Source/ViewPagerIndicator-Library/AndroidManifest.xml:3:11-69
+	android:versionCode
+		ADDED from /Users/wirelesslife/StudioProjects/Help Projects/Muneeb Project/Your Source/Your Source/ViewPagerIndicator-Library/AndroidManifest.xml:5:5-29
+		INJECTED from /Users/wirelesslife/StudioProjects/Help Projects/Muneeb Project/Your Source/Your Source/ViewPagerIndicator-Library/AndroidManifest.xml
+		INJECTED from /Users/wirelesslife/StudioProjects/Help Projects/Muneeb Project/Your Source/Your Source/ViewPagerIndicator-Library/AndroidManifest.xml
+uses-sdk
+INJECTED from /Users/wirelesslife/StudioProjects/Help Projects/Muneeb Project/Your Source/Your Source/ViewPagerIndicator-Library/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/wirelesslife/StudioProjects/Help Projects/Muneeb Project/Your Source/Your Source/ViewPagerIndicator-Library/AndroidManifest.xml
+INJECTED from /Users/wirelesslife/StudioProjects/Help Projects/Muneeb Project/Your Source/Your Source/ViewPagerIndicator-Library/AndroidManifest.xml
+INJECTED from /Users/wirelesslife/StudioProjects/Help Projects/Muneeb Project/Your Source/Your Source/ViewPagerIndicator-Library/AndroidManifest.xml
+INJECTED from /Users/wirelesslife/StudioProjects/Help Projects/Muneeb Project/Your Source/Your Source/ViewPagerIndicator-Library/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/wirelesslife/StudioProjects/Help Projects/Muneeb Project/Your Source/Your Source/ViewPagerIndicator-Library/AndroidManifest.xml
+		ADDED from /Users/wirelesslife/StudioProjects/Help Projects/Muneeb Project/Your Source/Your Source/ViewPagerIndicator-Library/AndroidManifest.xml
+		INJECTED from /Users/wirelesslife/StudioProjects/Help Projects/Muneeb Project/Your Source/Your Source/ViewPagerIndicator-Library/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/wirelesslife/StudioProjects/Help Projects/Muneeb Project/Your Source/Your Source/ViewPagerIndicator-Library/AndroidManifest.xml
+		ADDED from /Users/wirelesslife/StudioProjects/Help Projects/Muneeb Project/Your Source/Your Source/ViewPagerIndicator-Library/AndroidManifest.xml
+		INJECTED from /Users/wirelesslife/StudioProjects/Help Projects/Muneeb Project/Your Source/Your Source/ViewPagerIndicator-Library/AndroidManifest.xml

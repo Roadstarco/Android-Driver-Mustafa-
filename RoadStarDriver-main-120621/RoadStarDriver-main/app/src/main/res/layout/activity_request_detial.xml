@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/toolbar" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_30"
+                android:layout_marginTop="@dimen/dimen_16"
+                android:layout_marginEnd="@dimen/dimen_30"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/dimen_16">
+                <!--Catgory-->
+                <TextView
+                    style="@style/text_meduim_label"
+                    android:layout_marginTop="@dimen/dimen_8"
+                    android:gravity="start"
+                    android:paddingTop="@dimen/dimen_5"
+                    android:text="@string/category"
+                    android:textColor="@color/colorBlack" />
+
+                <TextView
+                    android:id="@+id/tv_category"
+                    style="@style/text_meduim_label"
+                    android:gravity="start"
+                    android:paddingTop="@dimen/dimen_5"
+                    android:textColor="#898989" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginTop="@dimen/dimen_3"
+                    android:background="#989898" />
+
+                <!--            Product type-->
+                <TextView
+                    style="@style/text_meduim_label"
+                    android:layout_marginTop="@dimen/dimen_8"
+                    android:gravity="start"
+                    android:paddingTop="@dimen/dimen_5"
+                    android:text="@string/product_type"
+                    android:textColor="@color/colorBlack" />
+
+                <TextView
+                    android:id="@+id/tv_product"
+                    style="@style/text_meduim_label"
+                    android:gravity="start"
+                    android:paddingTop="@dimen/dimen_5"
+                    android:textColor="#898989" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginTop="@dimen/dimen_3"
+                    android:background="#989898" />
+                <!--            Product Weight-->
+
+                <TextView
+                    android:id="@+id/tv_product_weight"
+                    style="@style/text_meduim_label"
+                    android:layout_marginTop="@dimen/dimen_16"
+                    android:gravity="start"
+                    android:paddingTop="@dimen/dimen_5"
+                    android:text="@string/product_weight"
+                    android:textColor="@color/colorBlack" />
+
+                <TextView
+                    android:id="@+id/tv_weight"
+                    style="@style/edit_text_style"
+                    android:background="@null"
+                    android:digits="0123456789"
+                    android:inputType="number"
+                    android:paddingTop="@dimen/dimen_5"
+                    android:textColor="#898989" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginTop="@dimen/dimen_2"
+                    android:background="#989898" />
+
+                <!--                height width lay-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <!--                    Height-->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/dimen_30"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+
+                            style="@style/text_meduim_label"
+                            android:layout_marginTop="@dimen/dimen_16"
+                            android:gravity="start"
+                            android:paddingTop="@dimen/dimen_5"
+                            android:text="@string/height"
+                            android:textColor="@color/colorBlack" />
+
+                        <TextView
+                            android:id="@+id/tv_height"
+                            style="@style/edit_text_style"
+                            android:background="@null"
+                            android:paddingTop="@dimen/dimen_5"
+                            android:textColor="#898989" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1px"
+                            android:layout_marginTop="@dimen/dimen_2"
+                            android:background="#989898" />
+                    </LinearLayout>
+                    <!--                   Height -->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dimen_30"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+
+                            style="@style/text_meduim_label"
+                            android:layout_marginTop="@dimen/dimen_16"
+                            android:gravity="start"
+                            android:paddingTop="@dimen/dimen_5"
+                            android:text="@string/width"
+                            android:textColor="@color/colorBlack" />
+
+                        <TextView
+                            android:id="@+id/tv_width"
+                            style="@style/edit_text_style"
+                            android:background="@null"
+                            android:paddingTop="@dimen/dimen_5"
+                            android:textColor="#898989" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1px"
+                            android:layout_marginTop="@dimen/dimen_2"
+                            android:background="#989898" />
+                    </LinearLayout>
+                </LinearLayout>
+                <!--   Attach Photot-->
+
+                <TextView
+                    android:id="@+id/tv_attach_photo"
+                    style="@style/text_meduim_label"
+                    android:layout_marginVertical="@dimen/dimen_16"
+                    android:gravity="start"
+                    android:paddingTop="@dimen/dimen_5"
+                    android:text="@string/attach_photo"
+                    android:textColor="@color/colorBlack" />
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fillViewport="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <com.roadstar.driverr.common.views.VizImageView
+                            android:id="@+id/attachement1"
+                            android:layout_width="@dimen/dimen_80"
+                            android:layout_height="@dimen/dimen_80"
+                            android:background="@drawable/soft_peach_bg_all_round"
+                            android:padding="@dimen/dimen_8"
+                            app:viv_src="@drawable/profile_place_holder" />
+
+                        <com.roadstar.driverr.common.views.VizImageView
+                            android:id="@+id/attachement2"
+                            android:layout_width="@dimen/dimen_80"
+                            android:layout_height="@dimen/dimen_80"
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:background="@drawable/soft_peach_bg_all_round"
+                            android:padding="@dimen/dimen_8"
+                            app:viv_src="@drawable/profile_place_holder" />
+
+                        <com.roadstar.driverr.common.views.VizImageView
+                            android:id="@+id/attachement3"
+                            android:layout_width="@dimen/dimen_80"
+                            android:layout_height="@dimen/dimen_80"
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:background="@drawable/soft_peach_bg_all_round"
+                            android:padding="@dimen/dimen_8"
+                            app:viv_src="@drawable/profile_place_holder" />
+                    </LinearLayout>
+
+                </ScrollView>
+
+                <!--   Product description-->
+
+                <TextView
+                    style="@style/text_meduim_label"
+                    android:layout_marginTop="@dimen/dimen_16"
+                    android:gravity="start"
+                    android:paddingTop="@dimen/dimen_5"
+                    android:paddingBottom="@dimen/dimen_5"
+                    android:text="@string/product_destribution"
+                    android:textColor="@color/colorBlack" />
+
+                <TextView
+                    android:id="@+id/tv_product_description"
+                    style="@style/edit_text_style"
+                    android:layout_height="@dimen/dimen_130"
+                    android:background="@drawable/soft_peach_bg_all_round"
+                    android:inputType="textCapSentences|textMultiLine"
+                    android:paddingStart="@dimen/dimen_8"
+                    android:paddingTop="@dimen/dimen_8"
+                    android:paddingEnd="@dimen/dimen_8"
+                    android:paddingBottom="@dimen/dimen_8"
+                    android:clickable="false"
+                    android:editable="false"/>
+                <!--   instructions-->
+
+                <TextView
+                    style="@style/text_meduim_label"
+                    android:layout_marginTop="@dimen/dimen_16"
+                    android:gravity="start"
+                    android:paddingTop="@dimen/dimen_5"
+                    android:paddingBottom="@dimen/dimen_5"
+                    android:text="Instructions"
+                    android:textColor="@color/colorBlack" />
+
+                <TextView
+                    android:id="@+id/tv_instructions"
+                    style="@style/edit_text_style"
+                    android:layout_height="@dimen/dimen_130"
+                    android:background="@drawable/soft_peach_bg_all_round"
+                    android:inputType="textCapSentences|textMultiLine"
+                    android:paddingStart="@dimen/dimen_8"
+                    android:paddingTop="@dimen/dimen_8"
+                    android:paddingEnd="@dimen/dimen_8"
+                    android:paddingBottom="@dimen/dimen_8"
+                    android:clickable="false"
+                    android:editable="false" />
+                <!--Receiver Details-->
+                <TextView
+                    style="@style/text_meduim_label"
+                    android:layout_marginTop="@dimen/dimen_16"
+                    android:gravity="start"
+                    android:text="Receiver Details"
+                    android:textColor="@color/colorBlack" />
+
+                <TextView
+                    style="@style/text_meduim_label"
+                    android:layout_marginTop="@dimen/dimen_8"
+                    android:gravity="start"
+                    android:text="@string/name"
+                    android:textColor="@color/colorBlack" />
+
+                <TextView
+                    android:id="@+id/tv_receiver_name"
+                    style="@style/text_meduim_label"
+                    android:gravity="start"
+                    android:paddingTop="@dimen/dimen_5"
+                    android:textColor="#898989" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginTop="@dimen/dimen_3"
+                    android:background="#989898" />
+
+                <!--            Product type-->
+                <TextView
+                    style="@style/text_meduim_label"
+                    android:layout_marginTop="@dimen/dimen_8"
+                    android:gravity="start"
+                    android:paddingTop="@dimen/dimen_5"
+                    android:text="Receiver Number"
+                    android:textColor="@color/colorBlack" />
+
+                <TextView
+                    android:id="@+id/tv_receiver_number"
+                    style="@style/text_meduim_label"
+                    android:gravity="start"
+                    android:paddingTop="@dimen/dimen_5"
+                    android:textColor="#898989" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginTop="@dimen/dimen_3"
+                    android:background="#989898" />
+
+                <!--Trip Start and End point-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_110"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/dimen_16">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:paddingBottom="@dimen/dimen_5">
+
+                        <ImageView
+                            android:id="@+id/img_start_point"
+                            android:layout_width="@dimen/dimen_16"
+                            android:layout_height="@dimen/dimen_16"
+                            android:layout_marginTop="@dimen/dimen_5"
+                            android:src="@drawable/ic_start_point"
+                            android:tint="#898989" />
+
+                        <View
+                            android:layout_width="1px"
+                            android:layout_height="match_parent"
+                            android:layout_above="@+id/img_end_point"
+                            android:layout_below="@id/img_start_point"
+                            android:layout_centerHorizontal="true"
+                            android:background="#898989" />
+
+                        <ImageView
+                            android:id="@+id/img_end_point"
+                            android:layout_width="@dimen/dimen_16"
+                            android:layout_height="@dimen/dimen_16"
+                            android:layout_alignParentBottom="true"
+                            android:src="@drawable/ic_car"
+                            android:tint="#898989" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="@dimen/dimen_16">
+
+                        <TextView
+                            android:id="@+id/tv_trip_start_dest"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/dimen_8"
+                            android:ellipsize="end"
+                            android:maxLines="2"
+                            android:textColor="#898989"
+                            android:textSize="@dimen/text_small" />
+
+                        <TextView
+                            android:id="@+id/tv_trip_end_dest"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginTop="@dimen/dimen_8"
+                            android:ellipsize="end"
+                            android:maxLines="2"
+                            android:textColor="#898989"
+                            android:textSize="@dimen/text_small" />
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+                <!--        Button next-->
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_accept"
+                    style="@style/ButtonPrimary"
+                    android:layout_marginTop="@dimen/dimen_16"
+                    android:layout_marginBottom="@dimen/dimen_0"
+                    android:stateListAnimator="@null"
+                    android:text="@string/accept" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_cancel_req"
+                    style="@style/ButtonPrimary"
+                    android:layout_marginTop="@dimen/dimen_16"
+                    android:layout_marginBottom="@dimen/dimen_16"
+                    android:background="@drawable/red_border_hallow"
+                    android:stateListAnimator="@null"
+                    android:text="Cancel"
+                    android:textColor="@color/color_orange" />
+            </LinearLayout>
+        </ScrollView>
+
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:progressTint="@color/red"
+        android:theme="@style/progressBarRed"
+        android:visibility="gone" />
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

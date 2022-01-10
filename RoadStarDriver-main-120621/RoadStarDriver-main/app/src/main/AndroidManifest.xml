@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.roadstar.driverr">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name="com.roadstar.driverr.MyApplication"
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning"
+        tools:overrideLibrary="com.mancj.materialsearchbar"
+        tools:replace="android:allowBackup">
+        <activity android:name="com.roadstar.driverr.app.module.ui.your_package.ListOfBidsOnProviderTrip"></activity>
+        <activity android:name="com.roadstar.driverr.app.module.ui.PostTripActivtiy.PostATrip" />
+        <activity android:name="com.roadstar.driverr.app.module.ui.your_package.YourAllPackageActivity" />
+        <activity android:name="com.roadstar.driverr.app.module.ui.request_detial.InternationalTripDetailsActivity" />
+        <activity android:name="com.roadstar.driverr.app.module.ui.request.RequestActivity" />
+        <activity android:name="com.roadstar.driverr.app.module.ui.document.DocumentActivity" />
+        <activity android:name="com.roadstar.driverr.app.module.ui.manage_vehicle.ManageVehicleActivity" />
+        <activity android:name="com.roadstar.driverr.app.module.ui.earning.EarningActivity" />
+        <activity android:name="com.roadstar.driverr.app.module.ui.request_detial.RequestDetailActivity" />
+        <activity android:name="com.roadstar.driverr.app.module.ui.request.RequestActivityOld" />
+        <activity android:name="com.roadstar.driverr.app.module.ui.auth.RegDetailsCompany" />
+        <activity android:name="com.roadstar.driverr.app.module.ui.auth.RegisterLandingActivity" />
+        <activity android:name="com.roadstar.driverr.app.module.ui.profile.ChangePasswordActivity" />
+        <activity android:name="com.roadstar.driverr.app.module.ui.profile.SettingActivity" />
+        <activity android:name="com.roadstar.driverr.app.module.ui.booking_activity.BookingActivity" />
+        <activity android:name="com.roadstar.driverr.app.module.ui.profile.MyProfileActivity" />
+        <activity android:name="com.roadstar.driverr.app.module.ui.your_package.YourPackageActivity" />
+        <activity android:name="com.roadstar.driverr.app.module.ui.available_booking.AvailBookingActivity" />
+        <activity android:name="com.roadstar.driverr.app.module.ui.claim.ClaimActivity" />
+        <activity android:name="com.roadstar.driverr.app.module.ui.payment_method.PaymentMethodActivity" />
+        <activity android:name="com.roadstar.driverr.app.module.ui.support.SupportActivity" />
+        <activity android:name="com.roadstar.driverr.app.module.ui.booking_history.BookingHistoryActivity" />
+        <activity android:name="com.roadstar.driverr.app.module.ui.main.MainActivity" />
+        <activity android:name="com.roadstar.driverr.app.module.ui.auth.RegistrationActivity" android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.roadstar.driverr.app.module.ui.auth.VerifyOtpActivity" />
+        <activity android:name="com.roadstar.driverr.app.module.ui.auth.PhoneNumbAuthActivity" />
+        <activity android:name="com.roadstar.driverr.app.module.ui.auth.ForgetPasswordActivity" />
+        <activity android:name="com.roadstar.driverr.app.module.ui.auth.SigninActivity" />
+        <activity android:name="com.roadstar.driverr.app.module.ui.auth.WelcomeActivity" />
+        <activity
+            android:name="com.roadstar.driverr.app.module.ui.SplashActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Launcher">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Base.Theme.AppCompat"
+            android:windowSoftInputMode="stateHidden" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="@string/app_id" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.roadstar.driverr.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <meta-data
+            android:name="com.google.android.gms.wallet.api.enabled"
+            android:value="true" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_map_api" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+    </application>
+
+</manifest>

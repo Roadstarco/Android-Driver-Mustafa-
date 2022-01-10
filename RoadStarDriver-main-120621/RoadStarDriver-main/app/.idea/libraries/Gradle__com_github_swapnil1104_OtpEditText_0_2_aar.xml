@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.swapnil1104:OtpEditText:0.2@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/89ebceb03f380862815fac0e307e13c0/OtpEditText-0.2/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/89ebceb03f380862815fac0e307e13c0/OtpEditText-0.2/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/89ebceb03f380862815fac0e307e13c0/OtpEditText-0.2/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.swapnil1104/OtpEditText/0.2/f13a30fea9e5b953f1561fa06d465a049ce2d888/OtpEditText-0.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

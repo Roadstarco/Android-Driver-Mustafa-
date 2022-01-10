@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/dimen_50"
+    android:paddingBottom="@dimen/dimen_16"
+    tools:context=".app.module.ui.auth.WelcomeActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/register"
+        android:textAllCaps="true"
+        android:textSize="@dimen/text_xLarge"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="@dimen/dimen_200"
+        android:layout_height="@dimen/dimen_250"
+        android:layout_marginStart="@dimen/dimen_25"
+        android:layout_marginEnd="@dimen/dimen_25"
+        android:src="@drawable/img_register_landing"
+        android:layout_marginTop="@dimen/dimen_16"
+        android:layout_marginBottom="@dimen/dimen_16"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_reg_comp"
+        style="@style/ButtonSecondary"
+        android:stateListAnimator="@null"
+        android:text="@string/register_as_a_company" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_reg_driver"
+        style="@style/ButtonPrimary"
+        android:stateListAnimator="@null"
+        android:text="@string/register_as_a_driver"
+        android:layout_marginTop="0dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_reg_provider"
+        style="@style/ButtonPrimary"
+        android:visibility="gone"
+        android:stateListAnimator="@null"
+        android:text="@string/register_as_a_provider"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/blue_grey_border_fill"/>
+
+</LinearLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"  />
+
+    <include layout="@layout/layout_pick_up_loc"/>
+    <include layout="@layout/layout_vehicle_type"
+        />
+    <include layout="@layout/layout_pricing"
+        />
+    <include layout="@layout/layout_package_detail"/>
+    <include layout="@layout/layout_receiver_detail"  />
+    <include layout="@layout/layout_pay_method"  />
+    <include layout="@layout/layout_rating"  />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".app.module.ui.auth.SigninActivity">
+
+    <include layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?actionBarSize"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/dimen_250"
+                android:layout_height="@dimen/dimen_250"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/reg_provider" />
+
+            <TextView
+                style="@style/text_meduim_label"
+                android:gravity="start"
+                android:paddingHorizontal="@dimen/dimen_50"
+                android:paddingTop="@dimen/dimen_16"
+                android:text="@string/please_enter_detials"
+                android:textStyle="bold" />
+            <!--    Vehicle type-->
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/text_input_lay"
+                android:layout_marginStart="@dimen/dimen_50"
+                android:layout_marginEnd="@dimen/dimen_50"
+                android:hint="@string/vehicle_tyep"
+                app:boxBackgroundColor="@android:color/transparent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    style="@style/edit_text_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <!--Company Reg Number-->
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/text_input_lay"
+                android:layout_marginStart="@dimen/dimen_50"
+                android:layout_marginEnd="@dimen/dimen_50"
+                android:hint="@string/vehicle_name"
+
+                app:boxBackgroundColor="@android:color/transparent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    style="@style/edit_text_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!--Total Vehicles-->
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/text_input_lay"
+                android:layout_marginStart="@dimen/dimen_50"
+                android:layout_marginEnd="@dimen/dimen_50"
+                android:hint="@string/vehicle_color"
+
+                app:boxBackgroundColor="@android:color/transparent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    style="@style/edit_text_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/tv_upload_veh_img"
+                style="@style/text_meduim_label"
+               android:textSize="@dimen/text_small"
+                android:text="@string/upload_vehicle_image"
+                android:textAllCaps="true"
+                android:gravity="start|center_vertical"
+                android:layout_marginHorizontal="@dimen/dimen_50"
+                android:paddingTop="@dimen/dimen_8"
+                android:drawableEnd="@drawable/ic_attachment"
+                android:textColor="@color/color_hint_text"
+                android:drawableTint="@color/color_hint_text"/>
+
+            <TextView
+                android:id="@+id/tv_upload_lice"
+                style="@style/text_meduim_label"
+                android:textSize="@dimen/text_small"
+                android:text="@string/upload_licence"
+                android:textAllCaps="true"
+                android:gravity="start|center_vertical"
+                android:layout_marginHorizontal="@dimen/dimen_50"
+                android:paddingTop="@dimen/dimen_8"
+                android:drawableEnd="@drawable/ic_attachment"
+                android:textColor="@color/color_hint_text"
+                android:drawableTint="@color/color_hint_text"/>
+            <TextView
+                android:id="@+id/tv_upload_lic_reg_no"
+                style="@style/text_meduim_label"
+                android:textSize="@dimen/text_small"
+                android:text="@string/upload_vehicle_registration_no"
+                android:textAllCaps="true"
+                android:gravity="start|center_vertical"
+                android:layout_marginHorizontal="@dimen/dimen_50"
+                android:paddingTop="@dimen/dimen_8"
+                android:drawableEnd="@drawable/ic_attachment"
+                android:textColor="@color/color_hint_text"
+                android:drawableTint="@color/color_hint_text"/>
+            <TextView
+                android:id="@+id/tv_upload_insucrance"
+                style="@style/text_meduim_label"
+                android:textSize="@dimen/text_small"
+                android:text="@string/upload_insurance"
+                android:textAllCaps="true"
+                android:gravity="start|center_vertical"
+                android:layout_marginHorizontal="@dimen/dimen_50"
+                android:paddingTop="@dimen/dimen_8"
+                android:drawableEnd="@drawable/ic_attachment"
+                android:textColor="@color/color_hint_text"
+                android:drawableTint="@color/color_hint_text"/>
+            <TextView
+                android:id="@+id/tv_resd_proof"
+                style="@style/text_meduim_label"
+                android:textSize="@dimen/text_small"
+                android:text="@string/upload_residance_proof"
+                android:textAllCaps="true"
+                android:gravity="start|center_vertical"
+                android:layout_marginHorizontal="@dimen/dimen_50"
+                android:paddingTop="@dimen/dimen_8"
+                android:drawableEnd="@drawable/ic_attachment"
+                android:textColor="@color/color_hint_text"
+                android:drawableTint="@color/color_hint_text"/>
+            <LinearLayout
+                android:id="@+id/lay_signin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:padding="@dimen/dimen_20">
+
+                <TextView
+                    style="@style/text_meduim_label"
+                    android:text="Already have an Account ? "
+                    android:textSize="@dimen/text_small" />
+
+                <TextView
+                    style="@style/text_meduim_label"
+                    android:paddingStart="@dimen/dimen_5"
+                    android:text="@string/sign_in"
+                    android:textColor="@color/color_orange"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_next"
+                style="@style/ButtonPrimary"
+                android:layout_marginTop="@dimen/dimen_16"
+                android:stateListAnimator="@null"
+                android:text="@string/next" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
